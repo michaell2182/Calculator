@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Text color */
+    
+}
+
+.calculator {
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.09);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.4px);
+-webkit-backdrop-filter: blur(7.4px);
+
+}
+
+.display {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    font-size: 24px;
+    text-align: right;
+    background-color: #444; /* Dark background color for display */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Text color for display */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    
+}
+
+button {
+    padding: 20px; /* Increased padding for circular buttons */
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #444; /* Dark button background color */
+    border: none;
+    border-radius: 50%; /* Make the buttons circular */
+    color: #fff; /* Button text color */
+}
+
+button:hover {
+    background-color: #666; /* Darker background color on hover */
+}
+.red-button {
+    color: #ff0000; /* Text color for the "C" button */
+}
+
+/* Hover effect for the "C" button */
+.red-button:hover {
+    background-color: #666; /* Slightly darker red on hover */
+}
+.equal-button {
+    background-color: #29cc1a; /* Red background color */
+    color: #fff; /* Text color for the "C" button */
+}
+
+/* Hover effect for the "C" button */
+.equal-button:hover {
+    background-color: #15ff00; /* Slightly darker red on hover */
+}
+
+#delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#delete-button i {
+    font-size: 24px;
+    color: red; /* Customize the color as needed */
+}
+
